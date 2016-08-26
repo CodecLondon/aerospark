@@ -3,6 +3,7 @@ package com.aerospike.spark.sql
 import scala.collection.JavaConversions._
 
 import org.apache.spark._
+import com.aerospike.spark.Logging
 import org.apache.spark.SparkContext
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql._
@@ -44,7 +45,7 @@ class KeyRecordRDD(
                     val schema: StructType = null,
                     val requiredColumns: Array[String] = null,
                     val filters: Array[Filter] = null
-                    ) extends RDD[Row](sc, Seq.empty) with Logging {  
+                    ) extends RDD[Row](sc, Seq.empty) {  
   
 
   override protected def getPartitions: Array[Partition] = {

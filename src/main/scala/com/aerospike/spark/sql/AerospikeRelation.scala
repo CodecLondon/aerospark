@@ -3,7 +3,7 @@ package com.aerospike.spark.sql
 import scala.collection.JavaConversions._
 import scala.util.parsing.json.JSONType
 
-import org.apache.spark.Logging
+import com.aerospike.spark.Logging
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.Row
 import org.apache.spark.sql.SQLContext

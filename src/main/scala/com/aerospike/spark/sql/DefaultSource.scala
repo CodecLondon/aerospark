@@ -1,7 +1,7 @@
 
 package com.aerospike.spark.sql
 
-import org.apache.spark.Logging
+import com.aerospike.spark.Logging
 import org.apache.spark.sql.DataFrame
 import org.apache.spark.sql.Row
 import org.apache.spark.sql.SQLContext
